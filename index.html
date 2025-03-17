@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do-list</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  </head>
+  <body>
+    <div class="to-do-list-container">
+      <h2>My Tasks Lister</h2>
+      <form action="POST" class="form-area">
+        <label for="task" id ="task">Enter your task: </label>
+
+        <input type="text" placeholder="Your task" class="input-area" />
+
+        <select class="priority" id="priority">
+          <option value="">Priority</option>
+          <option value="high" id="high">High priority</option>
+          <option value="medium" id="medium">Medium</option>
+          <option value="low" id="low">Low</option>
+        </select>
+
+        <input type="submit" value="Submit" class="submit-btn" />
+      </form>
+      <div class="list-area">
+        <ul class="list"></ul>
+      </div>
+      <button class="delete-all">Delete</button>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
